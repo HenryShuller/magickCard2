@@ -3,7 +3,7 @@ const Layout = require('./Layout');
 
 function Main({ title, cards, user }) {
   return (
-    <Layout title={title}>
+    <Layout title={title} user={user}>
       {/* <h1>Hello MAZA-FUCKA!</h1> */}
       <div className="container">
         {cards.map((card) => (

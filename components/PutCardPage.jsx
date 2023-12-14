@@ -1,9 +1,9 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-function PutCardPage({ card }) {
+function PutCardPage({ card, user }) {
   return (
-    <Layout>
+    <Layout user={user}>
       <div>
         <form className="putForm" data-id={card.id}>
           <input
