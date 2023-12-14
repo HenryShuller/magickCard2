@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const generateTokens = require('../utils/authUtils');
+require('dotenv').config()
 
 // логика проверки refresh token
 function verifyRefreshToken(req, res, next) {
