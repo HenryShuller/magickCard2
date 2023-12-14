@@ -9,6 +9,7 @@ function Layout({ title, children }) {
 
 
         <link href="/styles/style.css" rel="stylesheet" />
+        
 
         <script defer src="/scripts/putScript.js" />
         {/* <script defer src="/scripts/add.js" />
