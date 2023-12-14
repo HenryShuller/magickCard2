@@ -9,7 +9,7 @@ function Headder({ user }) {
       {user ? (
         <div>
           <a className='a1' href="/">ВЫЙТИ</a>
-        </div>
+
       ) : (
         <div>
           <a className='a1' href="/auth/rega">РЕГИСТРАЦИЯ</a>

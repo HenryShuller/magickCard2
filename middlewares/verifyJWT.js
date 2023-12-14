@@ -46,6 +46,7 @@ function verifyAccessToken(req, res, next) {
   const { user } = jwt.verify(access, process.env.ACCESS_TOKEN_SECRET);
   // если верификация прошла успешно, то кладем user в res.locals
   res.locals.user = user;
+  console.log(res.locals.user);
   // и отправляем запрос дальше
   next();
 }

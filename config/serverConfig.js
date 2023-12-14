@@ -2,6 +2,7 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const ssr = require('../middlewares/ssr');
 const  checkUser  = require('../middlewares/verifyJWT');
+const { verify } = require('jsonwebtoken');
 
 const config = (app) => {
   app.use(express.json());
@@ -9,6 +10,7 @@ const config = (app) => {
   app.use(express.static('public'));
   app.use(ssr);
   app.use(cookieParser());
+
   app.use(checkUser);
   
 };
