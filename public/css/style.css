@@ -5,8 +5,19 @@
 .contNav {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .a1 {
+  color: gray;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 20px 0px;
+  line-height: 1;
+  text-decoration: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.p1 {
   color: gray;
   font-size: 2em;
   font-weight: bold;
@@ -130,7 +141,13 @@
   color: transparent;
   -webkit-background-clip: text;
 }
-.h4{
+.h4 {
   display: flex;
   justify-content: center;
+}
+
+.centerdiv {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }

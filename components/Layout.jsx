@@ -2,7 +2,7 @@
 const React = require('react');
 const Headder = require('./Headder');
 function Layout({ title, children, user }) {
-  console.log(user);
+
   return (
     <html lang="en">
       <head>
