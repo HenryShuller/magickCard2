@@ -8,7 +8,7 @@ function Layout({ title, children }) {
         <title>{title}</title>
 
 
-        <link href="/styles/style.css" rel="stylesheet" />
+        <link href="/css/style.css" rel="stylesheet" />
                 {/* <script defer src="/scripts/script.js" /> */}
                 <script defer src="/scripts/rega.script.js" />
         <script defer src="/scripts/login.script.js" />
@@ -16,7 +16,6 @@ function Layout({ title, children }) {
         <script defer src="/scripts/putScript.js" />
         {/* <script defer src="/scripts/add.js" />
         <script defer src="/scripts/delete.js" /> */}
-dev
         {/* дефер заставляет ассинхронно грузиться скрипит вместе с дом деревом, но разница в том что асинк остановит дом дерево затем продолжит, а дефер дождется до конца пока у нас не загрузится дом дерево пока что бы выполнить скрипты */}
       </head>
       <body>
