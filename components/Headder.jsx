@@ -8,7 +8,7 @@ function Headder({ user }) {
       </div>
       {user ? (
         <div>
-          <a href="/">ВЫЙТИ</a>
+          {/* <a href="/">ВЫЙТИ</a> */}
         </div>
       ) : (
         <div>

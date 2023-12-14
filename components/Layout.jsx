@@ -1,7 +1,8 @@
 // components/Layout.jsx
 const React = require('react');
 const Headder = require('./Headder');
-function Layout({ title, children }) {
+function Layout({ title, children, user }) {
+  console.log(user);
   return (
     <html lang="en">
       <head>
@@ -16,11 +17,10 @@ function Layout({ title, children }) {
         <script defer src="/scripts/putScript.js" />
         {/* <script defer src="/scripts/add.js" />
         <script defer src="/scripts/delete.js" /> */}
-dev
         {/* дефер заставляет ассинхронно грузиться скрипит вместе с дом деревом, но разница в том что асинк остановит дом дерево затем продолжит, а дефер дождется до конца пока у нас не загрузится дом дерево пока что бы выполнить скрипты */}
       </head>
       <body>
-        <Headder />
+        <Headder user={user} />
         {children}
       </body>
     </html>
