@@ -1,7 +1,7 @@
-const React = require('express');
+const React = require('react');
 const Layout = require('./Layout');
 
-module.exports = function PutCardPage({ card }) {
+function PutCardPage({ card }) {
   return (
     <Layout>
       <div>
@@ -15,4 +15,6 @@ module.exports = function PutCardPage({ card }) {
       </div>
     </Layout>
   );
-};
+}
+
+module.exports = PutCardPage;
