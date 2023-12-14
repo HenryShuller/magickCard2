@@ -2,15 +2,9 @@
 const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class UserCard extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate({User,Card}) {
-      this.belongsTo(User,{foreignKey:"userId"})
-      this.belongsTo(Card,{foreignKey:"cardId"})
-      // define association here
+    static associate({ User, Card }) {
+      this.belongsTo(User, { foreignKey: 'userId' });
+      this.belongsTo(Card, { foreignKey: 'cardId' });
     }
   }
   UserCard.init(
@@ -18,20 +12,20 @@ module.exports = (sequelize, DataTypes) => {
       userId: {
         allowNull: false,
         type: DataTypes.INTEGER,
-        references:{
-          model:'Users',
-          key:"id",
+        references: {
+          model: 'Users',
+          key: 'id',
         },
-        onDelete:"cascade"
+        onDelete: 'cascade',
       },
       cardId: {
         allowNull: false,
         type: DataTypes.INTEGER,
-        references:{
-          model:'Cards',
-          key:"id",
+        references: {
+          model: 'Cards',
+          key: 'id',
         },
-        onDelete:"cascade"
+        onDelete: 'cascade',
       },
     },
     {
