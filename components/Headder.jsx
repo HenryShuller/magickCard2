@@ -4,28 +4,28 @@ function Headder({ user }) {
   return (
     <div className="contNav">
       <div>
-        <a href="/">Главная</a>
+        <a className='a1' href="/">Главная</a>
       </div>
       {user ? (
         <div>
-          {/* <a href="/">ВЫЙТИ</a> */}
-        </div>
+          <a className='a1' href="/">ВЫЙТИ</a>
+
       ) : (
         <div>
-          <a href="/auth/rega">РЕГИСТРАЦИЯ</a>
+          <a className='a1' href="/auth/rega">РЕГИСТРАЦИЯ</a>
         </div>
       )}
               {user ? (
           <div>
             <p>Приветик {user.name}!</p>
-            <a href="/auth/logout" >
+            <a className='a1' href="/auth/logout" >
               Выход
             </a>
           </div>
 
         ):(<div>
         
-          <a href="/auth/login" >
+          <a className='a1' href="/auth/login" >
             Вход
           </a>
         </div>)}

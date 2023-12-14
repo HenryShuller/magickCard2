@@ -3,14 +3,14 @@ const Layout = require('./Layout');
 
 function Main({ title, cards, user }) {
   return (
-    <Layout title={title} user={user}>
-      <h1>Hello MAZA-FUCKA!</h1>
-      <div>
+    <Layout title={title}>
+      {/* <h1>Hello MAZA-FUCKA!</h1> */}
+      <div className="container">
         {cards.map((card) => (
-          <div>
-            <img src={card.img}></img>
+          <div className="cardone">
+            <img src={card.img} style={{ width: '200px' }}></img>
             <h2>{card.name}</h2>
-            <a href={`/card/${card.id}`}>Изменить</a>
+            <a className='a2' href={`/card/${card.id}`}>Изменить</a>
           </div>
         ))}
       </div>

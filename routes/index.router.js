@@ -16,5 +16,5 @@ router.use('/api/auth', ApiAuthRouter)
 router.use('/', MainRouter);
 router.use('/card', CardRoter);
 router.use('/auth', ViewAuthRouter)
-
+f
 module.exports = router;
