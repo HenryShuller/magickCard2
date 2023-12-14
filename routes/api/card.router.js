@@ -15,7 +15,7 @@ router.put('/:putId', async (req, res) => {
     } else {
       const putCard = await Card.update(
         { name, img, price, newold },
-        { where: { putId } }
+        { where: { id: putId } }
       );
       res.json({ success: true, card: putCard });
     }

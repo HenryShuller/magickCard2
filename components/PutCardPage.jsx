@@ -5,7 +5,7 @@ function PutCardPage({ card }) {
   return (
     <Layout>
       <div>
-        <form id="putForm" data-id={card.id}>
+        <form className="putForm" data-id={card.id}>
           <input type="text" name="name" value={card.name} />
           <input type="text" name="img" value={card.img} />
           <input type="text" name="price" value={card.price} />

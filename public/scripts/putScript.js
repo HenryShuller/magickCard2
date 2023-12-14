@@ -1,10 +1,11 @@
-const formPut = document.querySelector('.formPut');
-
-if (formPut) {
-  formPut.addEventListener('submit', async (e) => {
+const putForm = document.querySelector('.putForm');
+console.log(putForm);
+if (putForm) {
+  putForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+
     const { name, img, price, newold } = e.target;
-    const { id } = e.target.dataset;
+
     const uppDate = {
       name: name.value,
       img: img.value,
@@ -13,14 +14,14 @@ if (formPut) {
     };
 
     try {
-      const res = await fetch(`/api/card/${id}`, {
+      const res = await fetch(`/api/card/${putForm.dataset.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(uppDate),
       });
       const data = await res.json();
       if (data.success) {
-        window.location.href = '/cards';
+        window.location.href = '/';
       }
     } catch (error) {
       console.log(error.message);
