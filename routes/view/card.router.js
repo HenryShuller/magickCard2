@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const PutCard = require('../../components/PutCard');
+const PutCard = require('../../components/PutCardPage');
 const { Card } = require('../../db/models');
 
 
