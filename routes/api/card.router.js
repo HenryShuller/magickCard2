@@ -1,5 +1,11 @@
 const router = require('express').Router();
+
+const CardOne = require('../../components/CardOne');
+
 const { Card } = require('../../db/models');
+ 
+
+// изменение карточки 
 
 router.put('/:putId', async (req, res) => {
   const { putId } = req.params;
@@ -23,5 +29,15 @@ router.put('/:putId', async (req, res) => {
     console.log(error.message);
   }
 });
+
+
+// добавление карточки 
+
+router.post('/', async (req,res) => {
+  const {name, img, price, newold} = req.body
+  const card = await Card.create({name, price, img, newold, userId:res.locals.user.id })
+  const html = res.renderComponent(CardOne, {card}, {doctype: false})
+  res.json({html, success: true})
+})
 
 module.exports = router;

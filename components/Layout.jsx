@@ -10,7 +10,7 @@ function Layout({ title, children, user }) {
 
 
         <link href="/css/style.css" rel="stylesheet" />
-                {/* <script defer src="/scripts/script.js" /> */}
+                <script defer src="/scripts/add.script.js" />
                 <script defer src="/scripts/rega.script.js" />
         <script defer src="/scripts/login.script.js" />
 
