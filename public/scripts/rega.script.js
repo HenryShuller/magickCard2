@@ -4,7 +4,6 @@ if (formReg) {
     event.preventDefault();
 
     const { name, password, email, city  } = event.target;
-    console.log(name);
   
   try {;
       const response = await fetch('/api/auth/rega', {
@@ -21,7 +20,7 @@ if (formReg) {
         },
       });
       const body = await response.json()
-      console.log(body, ' !!!!!!!!!!!!!!!!!!');
+  
       if(body.success){
         window.location.href='/auth/login'
       }
