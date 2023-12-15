@@ -36,6 +36,12 @@ function Headder({ user }) {
           </div>
         </>
       )}
+      <div>
+        <form className="formsearch">
+          <input className='inputS' type="text" name="name1" />
+          <button className='btnS' type="submit">поиск</button>
+        </form>
+      </div>
     </div>
   );
 }
