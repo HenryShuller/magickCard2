@@ -40,4 +40,22 @@ router.post('/', async (req,res) => {
   res.json({html, success: true})
 })
 
+
+// удаление карточки 
+
+router.delete('/:id', async (req, res) => {
+  try {
+    const {id} = req.params
+    console.log(id);
+    const data = await Card.destroy({ where:{id, userId: res.locals.user.id  }})
+    if (data > 0) {
+      return res.status(200).json({ message: 'ok' });
+    } else {
+      return res.status(400).json({ message: 'не удалось удалить' });
+    }
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+})
+
 module.exports = router;
