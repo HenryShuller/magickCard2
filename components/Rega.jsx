@@ -16,7 +16,6 @@ function Rega ({title}){
           </form>
         </div>
         </div>
-    
         </Layout>
     )}
     module.exports=Rega

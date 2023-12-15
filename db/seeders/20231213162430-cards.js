@@ -88,6 +88,15 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
         },
+        {
+          name: 'Юра',
+          img: 'https://ca.slack-edge.com/T04V5DDHUN8-U05UJ2S6GGL-ec08468b61a3-512',
+          price: 'беслпатно',
+          newold: 'old',
+          userId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
       ],
       {}
     );
