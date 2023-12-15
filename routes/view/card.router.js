@@ -11,4 +11,7 @@ router.get('/:id', async (req, res) => {
   const html = res.renderComponent(PutCardPage, { card });
   res.send(html);
 });
+
+
+
 module.exports = router;
