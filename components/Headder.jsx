@@ -8,7 +8,6 @@ function Headder({ user }) {
           Главная
         </a>
       </div>
-
       {user ? (
         <div className="centerdiv">
           <div>
@@ -38,8 +37,10 @@ function Headder({ user }) {
       )}
       <div>
         <form className="formsearch">
-          <input className='inputS' type="text" name="name1" />
-          <button className='btnS' type="submit">поиск</button>
+          <input className="inputS" type="text" name="name1" />
+          <button className="btnS" type="submit">
+            поиск
+          </button>
         </form>
       </div>
     </div>
