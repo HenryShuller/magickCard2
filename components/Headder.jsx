@@ -25,7 +25,7 @@ function Headder({ user }) {
         <>
           <div>
             <a className="a1" href="/auth/rega">
-              РЕГИСТРАЦИЯ
+              Регистрация
             </a>
           </div>
           <div>

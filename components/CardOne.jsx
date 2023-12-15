@@ -7,8 +7,7 @@ function CardOne({ card }) {
       <a className="a2" href={`/Page/${card.id}`}>
         ИЗУЧИТЬ ...
       </a>
-
-      <h2>{card.name}</h2>
+      <h2 className='h3'>{card.name}</h2>
       <a className="a2" href={`/card/${card.id}`}>
         Изменить
       </a>

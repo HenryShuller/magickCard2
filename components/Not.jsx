@@ -1,8 +1,6 @@
 const React = require('react');
 
 
-
-
 function Not() {
   return (
     <div>

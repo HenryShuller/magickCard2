@@ -6,7 +6,7 @@ const CardOne = require('./CardOne');
 function Main({ title, cards, user }) {
   return (
     <Layout title={title} user={user}>
-      <AddProduct />
+      {user ? <AddProduct /> : <></>}
       <div className="container">
         {cards.map((card) => (
           <CardOne card={card} />
