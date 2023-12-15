@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const Page = require('../../components/Page');
-// const ReactDom=require("react-dom/server")
 const { Card } = require('../../db/models');
 
 

@@ -5,19 +5,30 @@
 .contNav {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .a1 {
-  color: gray; 
+  color: gray;
   font-size: 2em;
   font-weight: bold;
   padding: 20px 0px;
   line-height: 1;
   text-decoration: none;
   -webkit-transition: all 1s ease;
-          transition: all 1s ease;
+  transition: all 1s ease;
 }
-.a1:hover{
-  color: beige; 
+.p1 {
+  color: gray;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 20px 0px;
+  line-height: 1;
+  text-decoration: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.a1:hover {
+  color: beige;
 }
 .a2 {
   text-decoration: none;
@@ -27,7 +38,6 @@
 .a2:hover {
   color: red;
 }
-
 
 .container {
   display: grid;
@@ -72,7 +82,7 @@
   background-color: gray;
   align-items: center;
 }
-.putForm{
+.putForm {
   background-color: gray;
   background-color: gray;
   max-width: 200px;
@@ -82,4 +92,78 @@
   justify-content: center;
   align-items: center;
   padding: 2rem 3rem;
+}
+
+.h1 {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  color: gray;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(228, 18, 18, 0.947);
+}
+.h2 {
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  color: silver;
+  font-size: 50px;
+  text-shadow: 4px 4px 1px #300000, 4px 6px 1px #400000, 4px 8px 1px #500000,
+    4px 10px 1px #600000, 4px 12px 1px #700000, 4px 14px 1px #800000,
+    4px 16px 1px #900000, 4px 18px 1px #a00000, 4px 20px 1px #b00000,
+    4px 22px 1px #c00000, 4px 24px 1px #d00000, 4px 26px 1px #e00000,
+    4px 28px 1px #f00000, 4px 30px 1px #fa0000, 4px 32px 1px #fb0000,
+    4px 34px 1px #fc0000, 4px 36px 1px #fd0000, 4px 38px 1px #fe0000,
+    4px 40px 2px #ff0000;
+}
+.h3 {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  font-size: 50px;
+  background-color: #0b1826;
+
+  font-family: 'Times New Roman', serif;
+  letter-spacing: 5px;
+
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.h4 {
+  display: flex;
+  justify-content: center;
+}
+
+.centerdiv {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.inputS {
+  background-color: white;
+  width: 200px;
+  height: 25px;
+  border-radius: 7px;
+  color: black;
+  text-align: center;
+}
+.btnS {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border-radius: 7px;
+  font-size: 17px;
 }

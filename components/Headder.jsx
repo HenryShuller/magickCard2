@@ -4,24 +4,44 @@ function Headder({ user }) {
   return (
     <div className="contNav">
       <div>
-        <a href="/">Главная</a>
+        <a className="a1" href="/">
+          Главная
+        </a>
       </div>
 
       {user ? (
-        <div>
-          <p>Приветик {user.name}!</p>
-          <a href="/auth/logout">Выход</a>
+        <div className="centerdiv">
+          <div>
+            {' '}
+            <a className="a1" href="/auth/logout">
+              Выход
+            </a>
+          </div>
+          <div>
+            {' '}
+            <p className="p1">Приветик {user.name}!</p>
+          </div>
         </div>
       ) : (
         <>
           <div>
-            <a href="/auth/rega">РЕГИСТРАЦИЯ</a>
+            <a className="a1" href="/auth/rega">
+              РЕГИСТРАЦИЯ
+            </a>
           </div>
           <div>
-            <a href="/auth/login">Вход</a>
+            <a className="a1" href="/auth/login">
+              Вход
+            </a>
           </div>
         </>
       )}
+      <div>
+        <form className="formsearch">
+          <input className='inputS' type="text" name="name1" />
+          <button className='btnS' type="submit">поиск</button>
+        </form>
+      </div>
     </div>
   );
 }

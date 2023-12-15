@@ -2,16 +2,19 @@
 const React = require('react');
 const Headder = require('./Headder');
 function Layout({ title, children, user }) {
-  console.log(user);
   return (
     <html lang="en">
       <head>
         <title>{title}</title>
 
-
         <link href="/css/style.css" rel="stylesheet" />
+
                 <script defer src="/scripts/add.script.js" />
                 <script defer src="/scripts/rega.script.js" />
+
+        {/* <script defer src="/scripts/script.js" /> */}
+        <script defer src="/scripts/rega.script.js" />
+dev
         <script defer src="/scripts/login.script.js" />
 
         <script defer src="/scripts/putScript.js" />

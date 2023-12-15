@@ -47,7 +47,6 @@ router.post('/rega', async (req, res) => {
 
 router.post('/login', async (req, res) => {
   const { email, password } = req.body;
-  console.log(123);
 
   try {
     if (email && password) {
@@ -76,7 +75,6 @@ router.post('/login', async (req, res) => {
           email: userndb.email,
         },
       });
-      console.log(acessToken, 'req.body ');
 
       // устанавливаем куки
 

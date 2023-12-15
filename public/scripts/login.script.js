@@ -4,7 +4,6 @@ if (formLog) {
     event.preventDefault();
 
     const { email, password } = event.target;
-    console.log(event.target);
     try {
       const response = await fetch('/api/auth/login', {
         method: 'POST',
@@ -17,7 +16,6 @@ if (formLog) {
         },
       });
       const body = await response.json();
-      console.log(body);
       if (body.success) {
         window.location.href = '/';
       } else {

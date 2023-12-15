@@ -1,5 +1,4 @@
 const putForm = document.querySelector('.putForm');
-console.log(putForm);
 if (putForm) {
   putForm.addEventListener('submit', async (e) => {
     e.preventDefault();
